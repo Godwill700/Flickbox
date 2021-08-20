@@ -1,0 +1,19 @@
+{
+  "name": "flickbox",
+  "version": "1.0.0",
+  "description": "A website showing information on a wide range of TV shows and movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Godwill700/Flickbox.git"
+  },
+  "author": "Charles Chinyemba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Godwill700/Flickbox/issues"
+  },
+  "homepage": "https://github.com/Godwill700/Flickbox#readme"
+}
