@@ -4,7 +4,7 @@
   "description": "A website showing information on a wide range of TV shows and movies",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass --watch scss:assets/css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/Godwill700/Flickbox/issues"
   },
-  "homepage": "https://github.com/Godwill700/Flickbox#readme"
+  "homepage": "https://github.com/Godwill700/Flickbox#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^10.3.1",
+    "bootstrap": "^5.1.0",
+    "postcss-cli": "^8.3.1"
+  },
+  "devDependencies": {
+    "sass": "^1.38.0"
+  }
 }
