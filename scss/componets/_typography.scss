@@ -1,0 +1,17 @@
+@use "../custom" as *;
+
+* {
+  font-family: "Poppins", sans-serif;
+  //   background-color: $teal-light;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.nav-item {
+  a {
+    font-size: 1.3rem;
+  }
+}

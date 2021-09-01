@@ -4,40 +4,556 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
     
     <title>Flickbox Entertainment</title>
 </head>
 <body>
     <!-- START NAVBAR SECTION -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Flickbox</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand fw-bold logo text-secondary mx-3" href="#">Flickbox</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Dicover TV Shows</a>
+                <a class="nav-link active" aria-current="page" href="#">Discover TV Shows</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Dicover Movies</a>
+                <a class="nav-link" aria-current="page" href="#">Discover Movies</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Top iMDB</a>
+                <a class="nav-link" href="#">Top IMDB</a>
               </li>
+       
             </ul>
             <form class="d-flex">
-                <i class="bi bi-search"></i>
-              <input class="form-control me-4 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+                <span><i class="fas fa-search fs-5 text-danger"></i></span>
+                <input class="form-control me-2 rounded-pill p-2" type="search" placeholder="Enter Key Words" aria-label="Search">
+              </form>
           </div>
         </div>
       </nav>
+
+      <!--  START SECTION 1- HERO CONTENT -->
+
+<section id="hero">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div id="carouselExampleCaptions" class="carousel slide hero-carousel overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/200/300?random=1" class="d-block w-100 overflow-hidden" alt="...">
+                    <div class="carousel-caption d-none d-md-block align-content-start text-danger">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/200/300?random=3" class="d-block w-100 overflow-hidden" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/200/300?random=102" class="d-block w-100 overflow-hidden" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+</section>
+  
+<!-- START SECTION 2 - INTRO -->
+
+<section id="intro">
+    <div class="container-fluid intro text-light">
+        <div class="row ms-3">
+            <h3 class="fw-bold mt-5">
+                Watch Traillers
+            </h3>
+            <p class="lead">
+                A place to watch traillers and get cast info on movies and TV shows. Flickbox lets you browse through a wide array of movies and TV shows info, preview and youtube trailler links.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- START SECTION 3 - DISCOVER TV SHOWS -->
+
+<section id="shows">
+    <div class="container-fluid movies pt-5 text-white">
+        <div class="row ms-3">
+            <div class="heading mb-5">
+                <h3 class="display-6 d-inline opacity-75 ">TV SHOWS</h3>
+                <div class="tabs d-inline-block ms-3">
+                    <button class="movies btn btn-lg btn-dark rounded p-2">Discover Movies</button>
+                    <button class="new btn btn-lg btn-dark rounded p-2">Trending</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- START TV SHOWS CONTENT -->
+        <div class="row row-cols-1 row-cols-md-5 row-cols-sm-4 g-4 mx-3">
+            <div class="col">
+              <div class="card h-100 bg-primary ">
+                <img src="https://picsum.photos/200/300?random=1" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=8" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=3" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=29" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=9" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=7" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=24" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=11" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=3" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=7" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=10" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=3" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+            
+    </div>
+
+</section>
+
+<!-- START SECTION 4 - DISCOVER MOVIES -->
+
+<section id="movies">
+    <div class="container-fluid movies pt-5 text-white">
+        <div class="row ms-3">
+            <div class="heading mb-5">
+                <h3 class="display-6 d-inline opacity-75">MOVIES</h3>
+            </div>
+        </div>
+
+        <!-- START MOVIES CONTENT -->
+        <div class="row row-cols-1 row-cols-md-5 row-cols-sm-4 g-4 mx-3">
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=12" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=8" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=16" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=1" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=17" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=1" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=17" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=1" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=4" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=1" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=4" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img srchttps://picsum.photos/200/300?random=1" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+<!-- START SECTION 5 - TRENDING -->
+
+<section id="trending">
+    <div class="container-fluid movies pt-5 text-white">
+        <div class="row ms-3">
+            <div class="heading mb-5">
+                <h3 class="display-6 d-inline opacity-75">TRENDING</h3>
+            </div>
+        </div>
+
+        <!-- START TRENDING CONTENT -->
+        <div class="row row-cols-1 row-cols-md-5 row-cols-sm-4 g-4 mx-3">
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=18" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=11" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=12" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=13" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=14" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=15" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=16" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=17" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=19" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=21" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=2" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-primary">
+                <img src="https://picsum.photos/200/300?random=4" class="card-img-top" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title m-0">Card title</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted year">2021</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
