@@ -9,7 +9,7 @@ let requestOptions = {
 // DISCOVER Top TV SHOWS API
 let topTV = "Top250TVs";
 
-// const api = `https://imdb-api.com/API/${topTV}/${apiKey}`;
+const api = `https://imdb-api.com/API/${topTV}/${apiKey}`;
 fetch(api, requestOptions)
   .then((response) => response.json())
   .then((data) => {
