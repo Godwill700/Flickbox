@@ -15,7 +15,7 @@
 <body>
     <!-- START NAVBAR SECTION -->
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow opacity-75 fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand fw-bold logo text-secondary mx-3" href="#">Flickbox</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,44 +44,51 @@
 
       <!--  START SECTION 1- HERO CONTENT -->
 
-<section id="hero">
+<section id="hero" class="">
     <div class="container-fluid p-0">
-        <div class="row">
-            <div id="carouselExampleCaptions" class="carousel slide hero-carousel overflow-hidden" data-bs-ride="carousel">
+        <div class="row ">
+            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="https://image.tmdb.org/t/p/original/jTswp6KyDYKtvC52GbHagrZbGvD.jpg" class="d-block w-100 overflow-hidden" alt="...">
-                    <div class="carousel-caption d-none d-md-block align-content-start text-danger">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
+                  <div class="carousel-item active ">
+                    <img src="https://image.tmdb.org/t/p/original/jTswp6KyDYKtvC52GbHagrZbGvD.jpg" id="hero-image-1" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block text-start bg-dark bg-opacity-50 p-3">
+                      <h5 id="hero-title-1">First slide label</h5>
+                      <p id="hero-overview-1" >Some representative placeholder content for the first slide.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="https://picsum.photos/200/300?random=3" class="d-block w-100 overflow-hidden" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
+                    <img src="https://mk0comicbookherb01s1.kinstacdn.com/wp-content/uploads/2021/07/black-widow-cast.jpg" id="hero-image-2" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block text-start bg-dark bg-opacity-50 p-3">
+                      <h5 id="hero-title-2">Second slide label</h5>
+                      <p id="hero-overview-2" >Some representative placeholder content for the second slide.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="https://picsum.photos/200/300?random=102" class="d-block w-100 overflow-hidden" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
+                    <img src="https://picsum.photos/200/300?random=102" id="hero-image-3" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-block text-start bg-dark bg-opacity-50 p-3">
+                      <h5 id="hero-title-3">Third slide label</h5>
+                      <p id="hero-overview-3" >Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/200/300?random=12" id="hero-image-4" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-block text-start bg-dark bg-opacity-50 p-3">
+                      <h5 id="hero-title-4">Fourth slide label</h5>
+                      <p id="hero-overview-4" >Some representative placeholder content for the fourth slide.</p>
                     </div>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
@@ -119,7 +126,7 @@
         </div>
 
         <!-- START TV SHOWS CONTENT -->
-        <div class="row row-cols-2  row-cols-md-5 row-cols-sm-4 g-3 g-md-4 mx-1 mx-md-3">
+        <div class="row row-cols-2  row-cols-md-5 row-cols-sm-4 g-2 g-md-4 mx-1 mx-md-3">
           <!-- CARD -1 -->
             <div class="col">
               <div class="card h-100 bg-primary ">
@@ -292,7 +299,7 @@
         </div>
 
         <!-- START MOVIES CONTENT -->
-        <div class="row row-cols-2  row-cols-md-5 row-cols-sm-4 g-3 g-md-4 mx-1 mx-md-3">
+        <div class="row row-cols-2  row-cols-md-5 row-cols-sm-4 g-2 g-md-4 mx-1 mx-md-3">
             <div class="col">
               <div class="card h-100 bg-primary">
                 <img src="https://picsum.photos/200/300?random=12" class="card-img-top" alt="...">
@@ -439,7 +446,7 @@
         </div>
 
         <!-- START TRENDING CONTENT -->
-        <div class="row row-cols-2  row-cols-md-5 row-cols-sm-4 g-3 g-md-4 mx-1 mx-md-3">
+        <div class="row row-cols-2  row-cols-md-5 row-cols-sm-4 g-2 g-md-4 mx-1 mx-md-3">
             <div class="col">
               <div class="card h-100 bg-primary">
                 <img src="https://picsum.photos/200/300?random=18" class="card-img-top" alt="...">
@@ -578,7 +585,8 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./assets/js/app.js"></script>
+    <!-- <script src="./assets/js/app.js"></script> -->
+    <script src="./assets/js/tmdb_api.js"></script>
 
 </body>
 </html>

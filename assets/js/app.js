@@ -1,4 +1,7 @@
-const apiKey = "pk_vv57m4wjiqmzbsx93";
+// const apiKey = "k_0bax769h";
+
+// TMDB API KEY
+const apiKey = " 0f5c3f0277f545b85f85d9aa8a0ef6df";
 let requestOptions = {
   method: "GET",
   redirect: "follow",
@@ -9,7 +12,7 @@ let requestOptions = {
 // DISCOVER Top TV SHOWS API
 let topTV = "Top250TVs";
 
-const api = `https://imdb-api.com/API/${topTV}/${apiKey}`;
+// const api = `https://imdb-api.com/API/${topTV}/${apiKey}`;
 fetch(api, requestOptions)
   .then((response) => response.json())
   .then((data) => {
@@ -19,7 +22,7 @@ fetch(api, requestOptions)
     let showImage1 = document.querySelector("#show-image-1");
     let showTitle1 = document.querySelector("#show-title-1");
     let showYear1 = document.querySelector("#show-year-1");
-    showIdNumber = Math.floor(Math.random() * 250);
+    showIdNumber = Math.floor(Math.random() * 250) + 1;
     let showId = data.items[showIdNumber];
 
     // INSERT DATA
