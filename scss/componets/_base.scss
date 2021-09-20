@@ -1,0 +1,9 @@
+@use "../custom" as *;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-bg {
+  background-color: $teal-light;
+}

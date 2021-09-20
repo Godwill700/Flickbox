@@ -1,10 +1,5 @@
 @use "../custom" as *;
 
-* {
-  font-family: "Poppins", sans-serif;
-  //   background-color: $teal-light;
-}
-
 .logo {
   font-family: "Poppins", sans-serif;
   font-size: 3rem;
@@ -14,4 +9,16 @@
   a {
     font-size: 1.3rem;
   }
+}
+
+// START STYLING FOR HEADING
+.heading::after {
+  content: "";
+  height: 0.01rem;
+  width: 6rem;
+  padding-top: 0.001rem;
+  display: block;
+  margin-top: 0.5rem;
+  // margin-bottom: 1rem;
+  background-color: $gray-600;
 }
