@@ -4,6 +4,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-bg {
   background-color: $teal-light;
 }

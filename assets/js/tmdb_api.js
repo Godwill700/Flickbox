@@ -83,3 +83,20 @@ function displayMovies(data) {
     movies.appendChild(movieEl);
   });
 }
+
+// BACK TO TOP BUTTON
+const backtoTop = document.querySelector("#to-top");
+window.onload = (e) => {
+  backtoTop.style.display = "none";
+};
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (window.pageYOffset > 200) {
+    backtoTop.style.display = "block";
+  } else {
+    backtoTop.style.display = "none";
+  }
+}
