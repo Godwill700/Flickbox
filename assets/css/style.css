@@ -11154,8 +11154,18 @@ html {
   color: #fff;
 }
 
-.fa-search {
-  font-size: 3rem;
+.search-content {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.search-icon {
+  position: relative;
+  right: -15%;
+  top: 0.5rem;
+}
+.search-icon .fas {
+  font-size: 1.8rem;
 }
 
 .intro {

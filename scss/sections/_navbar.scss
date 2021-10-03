@@ -1,3 +1,10 @@
-.fa-search {
-  font-size: 3rem;
+.search-icon {
+  position: relative;
+  right: -15%;
+  top: 0.5rem;
+  // padding-top: 0.6rem;
+
+  .fas {
+    font-size: 1.8rem;
+  }
 }
