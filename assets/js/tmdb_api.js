@@ -176,7 +176,10 @@ form.addEventListener("submit", (e) => {
 
   if (searchTerm) {
     let searchURL = `${searchBase}${searchTerm}`;
+    let searchInput = document.querySelector("#search");
     console.log(searchURL);
     getSearchResults(searchURL);
+
+    // searchInput.value = "";
   }
 });
