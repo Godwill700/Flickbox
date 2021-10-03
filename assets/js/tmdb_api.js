@@ -1,6 +1,6 @@
 const apiKey = "api_key=0f5c3f0277f545b85f85d9aa8a0ef6df";
 const baseURL = "https://api.themoviedb.org/3";
-const imageURL = "https://image.tmdb.org/t/p/w500/";
+const imageURL = "https://image.tmdb.org/t/p/w500";
 let latestShows = "/tv/top_rated?";
 let latestMovies = "/movie/popular?";
 let url = baseURL + latestShows + apiKey;
@@ -122,25 +122,30 @@ function displayResults(data) {
 
   // ADDING SEARCH CONTENT
   let searchContent = document.createElement("div");
-  searchContent.classList.add("container-fluid", "text-white");
+  searchContent.classList.add(
+    "container-fluid",
+    "text-white",
+    "search-content"
+  );
+  let query = search.value;
   searchContent.innerHTML = `
-  <h4 class="heading mb-5">Search Result for: <strong>Searched Text</strong></h4>
+  <h4 class="heading mb-5">Search Result for: <strong>${query}</strong></h4>
   `;
+
+  const searchGrid = document.createElement("div");
+  searchGrid.classList.add(
+    "row",
+    "row-cols-2",
+    "row-cols-md-5",
+    "row-cols-sm-4",
+    "g-2",
+    "g-md-4",
+    "mx-1",
+    "mx-md-3"
+  );
 
   data.forEach((result) => {
     const searchEl = document.createElement("div");
-    const searchGrid = document.createElement("div");
-    searchGrid.classList.add(
-      "row",
-      "row-cols-2",
-      "row-cols-md-5",
-      "row-cols-sm-4",
-      "g-2",
-      "g-md-4",
-      "mx-1",
-      "mx-md-3",
-      "search-content"
-    );
     searchEl.classList.add("col", "result");
     const { name, poster_path, vote_average, first_air_date } = result;
     searchEl.innerHTML = `
@@ -157,7 +162,8 @@ function displayResults(data) {
               </div>
 
 `;
-    mainContent.appendChild(searchGrid);
+    mainContent.append(searchContent);
+    searchContent.append(searchGrid);
     searchGrid.appendChild(searchEl);
   });
 }
